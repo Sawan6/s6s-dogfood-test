@@ -1,0 +1,55 @@
+{
+  "docs_faqpage_schema": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "S6S.ai is an AI visibility monitor that tracks how your brand appears across AI answer engines including ChatGPT, Perplexity, Gemini, Claude, and Grok."
+        },
+        "name": "What is S6S.ai?"
+      },
+      {
+        "@type": "Question",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "S6S.ai crawls your site, extracts brand and product signals, then queries multiple AI engines to measure how often and how accurately your brand is mentioned, producing a scored report with actionable recommendations."
+        },
+        "name": "How does S6S.ai visibility scoring work?"
+      },
+      {
+        "@type": "Question",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "S6S.ai monitors Perplexity, ChatGPT, Gemini, Claude, and Grok."
+        },
+        "name": "Which AI engines does S6S.ai monitor?"
+      },
+      {
+        "@type": "Question",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Enter your domain on s6s.ai to run a free instant audit. S6S.ai checks AI readiness, crawlability, schema signals, and citation sources, then delivers a recommendation summary — no credit card required."
+        },
+        "name": "How do I get started with S6S.ai?"
+      }
+    ]
+  },
+  "homepage_organization_schema": {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "description": "S6S.ai is an AI visibility monitoring tool that tracks brand presence across ChatGPT, Perplexity, Gemini, Claude, and Grok.",
+    "logo": "https://s6s.ai/logo.png",
+    "name": "S6S.ai",
+    "sameAs": [],
+    "url": "https://s6s.ai/"
+  },
+  "implementation_notes": {
+    "docs": "Embed the docs_faqpage_schema block as a <script type='application/ld+json'> tag in the <head> of https://s6s.ai/docs. The page already contains FAQ content (hasFaqBlocks:true) but has no FAQPage schema, so this addition directly addresses the 2.7x Gemini citation gap.",
+    "homepage": "Embed the organization_schema block as a <script type='application/ld+json'> tag in the <head> of https://s6s.ai/. Replace sameAs array with verified social profile URLs when available.",
+    "priority": "high",
+    "structured_data_score_before": 0
+  }
+}
